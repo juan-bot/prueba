@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navgraph"
+    app:startDestination="@id/frgMenu">
+
+    <fragment
+        android:id="@+id/frgMenu"
+        android:name="com.example.prueba.presentation.view.FrgMenu"
+        android:label="frg_menu_frg"
+        tools:layout="@layout/frg_menu_frg" >
+        <action
+            android:id="@+id/toFrgCalculadora"
+            app:destination="@id/frgCalculadora" />
+    </fragment>
+    <fragment
+        android:id="@+id/frgCalculadora"
+        android:name="com.example.prueba.presentation.view.FrgCalculadora"
+        android:label="frg_calculadora"
+        tools:layout="@layout/frg_calculadora" />
+</navigation>
