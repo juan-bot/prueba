@@ -30,7 +30,7 @@ class FrgCalculadora : Fragment() {
             binding.tvoperation.setText("$it")
         }
         binding.btnzero.setOnClickListener{
-            setOperation('0')
+            setOperation('1')
         }
         binding.btnone.setOnClickListener{
             setOperation('1')
